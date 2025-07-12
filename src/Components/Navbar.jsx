@@ -19,8 +19,8 @@ function Navbar() {
 
   return (
      
-    <nav className="max-w-[1530px] xl:px-[116px] px-10 mx-auto xl:py-13 lg:py-9 py-7 ">
-        <div className='flex items-center justify-between'>
+    <nav className="xl:py-13 lg:py-9 py-7">
+        <div className='max-w-[1530px] mx-auto flex items-center justify-between fixed top-13 xl:px-[116px] px-10 left-0 right-0'>
 
             {/* logo */}
 

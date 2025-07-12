@@ -1,4 +1,5 @@
 import './App.css'
+import FineTuned from './Components/FineTuned'
 import HeroArea from './Components/HeroArea'
 import Navbar from './Components/Navbar'
 function App() {
@@ -10,7 +11,7 @@ function App() {
             <Navbar />
             <HeroArea />
           </div>
-          
+          <FineTuned />
        </main>
     </>
   )

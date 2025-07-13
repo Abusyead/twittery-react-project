@@ -64,7 +64,7 @@ function FineTuned() {
 
         {/* left table section */}
 
-        <div className="overflow-x-auto w-full lg:flex-1/2 lg:px-5 md:px-20 sm:px-15 px-10 ">
+        <div className="overflow-x-auto 2xl:overflow-visible w-full lg:flex-1/2 lg:px-5 md:px-20 sm:px-15 px-10 ">
           <table className='min-w-[800px] bg-[#151515] '>
             <thead className=' bg-[rgb(34,34,37)]'>
               <tr>

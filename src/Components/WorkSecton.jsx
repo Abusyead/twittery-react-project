@@ -32,7 +32,7 @@ function WorkSecton() {
         </div>
         <div className='flex items-center justify-center mt-15 lg:gap-15 gap-10 lg:flex-row flex-col'>
             {WorkData.map((data , index)=>(
-                <div key={index} className='flex items-center justify-center flex-col max-w-[366px]'>
+                <div key={index} className='flex items-center justify-center flex-col max-w-[366px] px-2'>
                     <div className='bg-blue-400 rounded-full size-[121px] flex justify-center items-center relative mb-10'>
                          <img src={data.img} alt="" />
                          <span className="absolute top-0 left-0 h-[35px] w-[35px] bg-[#ffffff] rounded-full flex justify-center items-center text-[#EA00F5] text-xl font-semibold">{data.id}</span>

@@ -3,6 +3,7 @@ import EarthData from './Components/EarthSection'
 import FineTuned from './Components/FineTuned'
 import HeroArea from './Components/HeroArea'
 import Navbar from './Components/Navbar'
+import PricingPlans from './Components/PricingPlans'
 import VideoSection from './Components/VideoSection'
 import WorkSecton from './Components/WorkSecton'
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <EarthData />
           <WorkSecton />
           <VideoSection />
+          <PricingPlans />
        </main>
     </>
   )

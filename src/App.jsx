@@ -3,6 +3,8 @@ import EarthData from './Components/EarthSection'
 import FineTuned from './Components/FineTuned'
 import HeroArea from './Components/HeroArea'
 import Navbar from './Components/Navbar'
+import VideoSection from './Components/VideoSection'
+import WorkSecton from './Components/WorkSecton'
 function App() {
 
   return (
@@ -14,6 +16,8 @@ function App() {
           </div>
           <FineTuned />
           <EarthData />
+          <WorkSecton />
+          <VideoSection />
        </main>
     </>
   )

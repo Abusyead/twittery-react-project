@@ -63,7 +63,7 @@ function EarthSection() {
             {/* right section */}
             
             <div className='flex-1/2 w-full lg:mt-0 mt-10'>
-               <div className='max-w-[619px] lg:mx-0 mx-auto  bg-[#d31818] p-5'>
+               <div className='max-w-[619px] lg:mx-0 mx-auto  bg-[#000000] p-5'>
                   {EarthData.map((data , index) =>(  
                     <p key={index} className='text-[#707478] leading-[45px] break-words'>
                         <span>{data.date} </span>From Earth 

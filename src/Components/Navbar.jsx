@@ -19,8 +19,8 @@ function Navbar() {
 
   return (
      
-    <nav className="xl:py-13 lg:py-9 py-7">
-        <div className='max-w-[1530px] mx-auto flex items-center justify-between fixed top-13 xl:px-[116px] px-10 left-0 right-0'>
+    <nav>
+        <div className='max-w-[1530px] mx-auto flex items-center justify-between fixed xl:px-[116px] px-10 left-0 right-0 z-10   xl:py-13 lg:py-9 py-7 bg-[#030015]'>
 
             {/* logo */}
 
@@ -31,7 +31,7 @@ function Navbar() {
             {/* mobile menu */}
 
             <button onClick={() => setIsMenu(!isMenu)} className='lg:hidden p-2'>
-                {isMenu ? <FaBars className='size-6'/> : <RxCross2 className="size-6"/> }
+                {isMenu ? <RxCross2 className="size-6"/> : <FaBars className='size-6'/> }
             </button>
 
 
@@ -68,7 +68,7 @@ function Navbar() {
 
         {
             isMenu && (
-            <div>
+            <div className="fixed top-10 bg-[#030015] w-full py-10 z-6">
                 <div className="lg:hidden flex flex-col items-center justify-center gap-3 mt-10">
                     {NavLink.map((nav , index)=>(
                         <a key={index} href={nav.Link} onClick={() => setActiveLink(nav.Link)} className={`text-base font-normal ${activeLink === nav.Link ? "text-[#ea00f5]":"text-white"}`}>{nav.label}</a>

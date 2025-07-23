@@ -45,10 +45,10 @@ import React from 'react'
 
 function Customars() {
   return (
-    <section className='lg:mt-30 md:mt-20 mt-15'>
+    <section className='lg:mt-30 md:mt-20 mt-15 px-4'>
         <div className=''>
-            <div className='mb-20 flex items-center justify-center max-w-[670px]  mx-auto'>
-                <h2 className='text-[60px] text-center font-bold'>What our customers say</h2>
+            <div className='lg:mb-20 md:mb-15 mb-10 flex items-center justify-center max-w-[670px]  mx-auto'>
+                <h2 className='lg:text-[60px] md:text-5xl sm:text-4xl text-3xl text-center font-bold'>What our customers say</h2>
             </div>
             <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 px-6 '>
               {CustomerData.map((data, index) =>(

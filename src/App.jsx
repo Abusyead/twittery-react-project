@@ -7,6 +7,8 @@ import PricingPlans from './Components/PricingPlans'
 import VideoSection from './Components/VideoSection'
 import WorkSecton from './Components/WorkSecton'
 import Customars from './Components/Customars'
+import AskedQuestions from './Components/AskedQuestions'
+import Community from './Components/Community'
 function App() {
 
   return (
@@ -22,6 +24,8 @@ function App() {
           <VideoSection />
           <PricingPlans />
           <Customars />
+          <AskedQuestions />
+          <Community />
        </main>
     </>
   )

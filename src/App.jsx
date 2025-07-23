@@ -9,6 +9,7 @@ import WorkSecton from './Components/WorkSecton'
 import Customars from './Components/Customars'
 import AskedQuestions from './Components/AskedQuestions'
 import Community from './Components/Community'
+import Footer from './Components/Footer'
 function App() {
 
   return (
@@ -26,6 +27,7 @@ function App() {
           <Customars />
           <AskedQuestions />
           <Community />
+          <Footer />
        </main>
     </>
   )

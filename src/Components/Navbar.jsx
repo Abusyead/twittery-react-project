@@ -19,8 +19,16 @@ function Navbar() {
 
   return (
      
-    <nav>
-        <div className='max-w-[1530px] mx-auto flex items-center justify-between fixed xl:px-[116px] px-10 left-0 right-0 z-10   xl:py-13 lg:py-9 py-7 bg-[#030015]'>
+    <nav className='bg-[#030015] fixed  left-0 right-0 z-100'>
+        <div className=' relative px-10 overflow-hidden'>
+            <div className='size-[800px] top-[-220px]  bg-[#243FE2] left-[105px] absolute z-10 blur-[400px] rounded-full'></div>
+
+            <div className='size-[800px] top-[-195px]  bg-[#A524E2]  left-[822px] absolute z-10 blur-[400px] rounded-full'></div>
+
+
+
+            <div className='max-w-[1530px] mx-auto flex items-center justify-between  xl:px-[116px]   xl:py-13 lg:py-9 py-7 relative z-100 '>
+
 
             {/* logo */}
 
@@ -86,6 +94,9 @@ function Navbar() {
             </div>
             )
         }
+        </div>
+
+
         
 
     </nav>

@@ -10,15 +10,14 @@ import Customars from './Components/Customars'
 import AskedQuestions from './Components/AskedQuestions'
 import Community from './Components/Community'
 import Footer from './Components/Footer'
+import DobleColor from './Components/Common/DobleColor'
 function App() {
 
   return (
     <>
        <main className="text-white font-primary bg-[#030015]">
-          <div>
-            <Navbar />
-            <HeroArea />
-          </div>
+          <Navbar />
+          <HeroArea />
           <FineTuned />
           <EarthData />
           <WorkSecton />

@@ -1,5 +1,6 @@
 import React from 'react'
 import { BiParagraph } from 'react-icons/bi'
+import DobleColor from './Common/DobleColor'
 
 const WorkData = [
     {
@@ -24,24 +25,31 @@ const WorkData = [
 
 function WorkSecton() {
   return (
-    <section className='max-w-[1462px] mx-auto lg:mt-30 md:mt-20 mt-15'>
-        <div className=" flex items-center justify-center">
-            <h2 className='md:text-5xl text-4xl  font-bold'>
-                How it works
-            </h2>
-        </div>
-        <div className='flex items-center justify-center mt-15 lg:gap-15 gap-10 lg:flex-row flex-col'>
-            {WorkData.map((data , index)=>(
-                <div key={index} className='flex items-center justify-center flex-col max-w-[366px] px-2'>
-                    <div className='bg-blue-400 rounded-full size-[121px] flex justify-center items-center relative mb-10'>
-                         <img src={data.img} alt="" />
-                         <span className="absolute top-0 left-0 h-[35px] w-[35px] bg-[#ffffff] rounded-full flex justify-center items-center text-[#EA00F5] text-xl font-semibold">{data.id}</span>
+    <section className='relative'>
+        <div className='absolute right-[100px] top-[40px] '>
+         <DobleColor /> 
+       </div>
+        <div className='max-w-[1462px] mx-auto lg:mt-30 md:mt-20 mt-15'>
+            <div className=" flex items-center justify-center">
+                <h2 className='md:text-5xl text-4xl  font-bold'>
+                    How it works
+                </h2>
+            </div>
+            <div className='flex items-center justify-center mt-15 lg:gap-15 gap-10 lg:flex-row flex-col'>
+                 
+                {WorkData.map((data , index)=>(
+                    <div key={index} className='flex items-center justify-center flex-col max-w-[366px] px-2'>
+                        <div className='rounded-full size-[121px] flex justify-center items-center relative mb-10'>
+                            <img src={data.img} alt="" />
+                            <span className="absolute top-0 left-0 h-[35px] w-[35px] bg-[#ffffff] rounded-full flex justify-center items-center text-[#EA00F5] text-xl font-semibold">{data.id}</span>
+                        </div>
+                        <h3 className='text-2xl font-bold text-[#ffffff] mb-5'>{data.title}</h3>
+                        <p className='text-center font-open text-[#9CA3AF] font-normal text-base'>{data.paragraph}</p>
                     </div>
-                    <h3 className='text-2xl font-bold text-[#ffffff] mb-5'>{data.title}</h3>
-                    <p className='text-center font-open text-[#9CA3AF] font-normal text-base'>{data.paragraph}</p>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
+        
     </section>
   )
 }

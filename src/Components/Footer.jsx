@@ -29,7 +29,7 @@ function Footer() {
             <div className="md:grid flex justify-center items-center flex-col xl:grid-cols-3 md:grid-cols-2  grid-cols-1 sm:px-5 px-10 gap-10 mb-15">
                 <div className='max-w-[359px] flex justify-center md:items-start items-center flex-col'>
                     <img src={TwitteryFooter} />
-                    <p className='text-[#9CA3AF] font-normal font-base leading-[29px] my-2 text-center'>
+                    <p className='text-[#9CA3AF] font-normal font-base leading-[29px] my-2 md:text-start text-center'>
                         There are many variations of passages of Lorem Ipsum available but  majority have suffered 
                         alteration in some form by injected.
                     </p>
@@ -44,7 +44,7 @@ function Footer() {
                 </div>
 
 
-                <div className='max-w-[500px]  flex justify-between md:gap-6 sm:gap-30 gap-0 md:px-10 sm:px-0 sm:flex-row flex-col bg-blue-400'>
+                <div className='max-w-[500px]  flex justify-between md:gap-6 sm:gap-30 gap-0 md:px-10 sm:px-0 sm:flex-row flex-col '>
                     {FooterData.map((data , index) =>(
                       <div key={index} className='flex sm:items-start items-center justify-center flex-col mt-5'>
                         <h2 className='text-2xl font-semibold mb-3'>{data.h2}</h2>
@@ -58,7 +58,7 @@ function Footer() {
                 </div>
                 <div className='max-w-[329px] flex justify-center md:items-start items-center flex-col'>
                     <h2 className='text-2xl font-semibold mb-3'>Join Newslatter</h2>
-                    <p className='font-base text-base text-[#9CA3AF] leading-[29px] text-center'>signup for our newsletter to get the latest News in your inbox.</p>
+                    <p className='font-base text-base text-[#9CA3AF] leading-[29px] md:text-start text-center'>signup for our newsletter to get the latest News in your inbox.</p>
 
                     <div className='mt-8 flex items-center justify-between   max-w-[325px] h-[55px] px-2 border border-[#FFFFFF33] rounded-[3px]'>
                       <input type="text" className="outline-none p-2" placeholder='Enter Your Email'/>

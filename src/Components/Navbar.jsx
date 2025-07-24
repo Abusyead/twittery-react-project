@@ -76,7 +76,7 @@ function Navbar() {
 
         {
             isMenu && (
-            <div className="fixed top-10 bg-[#030015] w-full py-10 z-6">
+            <div className="fixed left-0 top-10 bg-[#030015] w-full py-10 z-6">
                 <div className="lg:hidden flex flex-col items-center justify-center gap-3 mt-10">
                     {NavLink.map((nav , index)=>(
                         <a key={index} href={nav.Link} onClick={() => setActiveLink(nav.Link)} className={`text-base font-normal ${activeLink === nav.Link ? "text-[#ea00f5]":"text-white"}`}>{nav.label}</a>
